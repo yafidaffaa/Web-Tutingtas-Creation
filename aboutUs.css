@@ -1,0 +1,665 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+  }
+
+  /* NAVIGATION BAR */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: transparent;
+    color: white;
+    height: 10%;
+  }
+
+  #navbar {
+    z-index: 10;
+    position: sticky;
+    
+    position: fixed;
+    width: 100%;
+    height: 7%;
+  }
+  
+  #mainLogo {
+    font-weight: bold;
+    color: #2b2a2a;
+  }
+
+  #mainLogo img {
+    width: 20%;
+    height: auto;
+    position: fixed;
+    margin-top: -3%;
+  }
+  
+  nav {
+    display: flex;
+    padding-right: 10%;
+    position: fixed;
+    margin-left: 70%;
+    margin-top: 0%;
+    
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 5%;
+    z-index: 10;
+    width: 100%;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgb(93, 93, 93);
+    font-size: 1.5vw;
+    padding-bottom: 0%;
+  }
+
+  nav a:hover {
+    color: rgb(136, 0, 0);
+    animation-duration: 0.5s;
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgb(73, 0, 0);
+    transition: all 0.6s;
+  }
+
+  header.scrolled {
+    background-color:rgb(255, 255, 255) ;
+    transition: all 0.6s;
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.623);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.623);
+  }
+
+  
+
+  /* BACKGROUND */
+
+  #background {
+    padding-top: 0%;
+  }
+  
+  main {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0%;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  main img {
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* MAIN PAGE */
+
+  #mainPage {
+    padding: 10%;
+    margin-top: -35%;
+    text-align: start;
+    position: absolute;
+    z-index: 9;
+    
+  }
+
+  #mainPage img {
+    width: 40%;
+    height: 20%;
+    
+  }
+  
+  #mainPage h2 {
+    color: #ffffff;
+    font-size: 300%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  #mainPage p {
+    color: rgb(136, 0, 0);
+    font-size: 200%;
+    letter-spacing: 1vw;
+    margin-top: 2%;
+    text-shadow: 2px 2px 4px rgb(73, 0, 0);
+    font-size: 2vw;
+  }
+
+  #mainPage h4 {
+    color: #ffffff;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 1.5vw;
+  }
+
+  /* VISI MISI PAGE */
+
+  #visi-misi {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+  }
+
+  #visi-misi li {
+    display: inline-block;
+    text-align: center;
+    padding: 5%;
+  }
+
+#visi {
+
+    width: 40%;
+    padding-top: -100%;
+}
+
+#misi {
+  padding-top: 0%;
+  width: 35%;
+  overflow-wrap: break-word;
+}
+
+#visi p {
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+#misi p {
+  text-align: justify;
+  font-size: 1.5vw;
+}
+
+#visi h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+  font-size: 2vw;
+}
+
+#misi h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+  font-size: 2vw;
+}
+  
+  /* OUR GAMES PAGE */
+
+  #ourGamePage {
+    margin-top: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ourGamePage h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+    margin-top: 0%;
+  }
+
+  .game-cards {
+    transition: all 0.6s;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    overflow-wrap: break-word; /* Menambahkan scrolling horizontal jika melebihi lebar layar */
+    white-space: nowrap; /* Mencegah pemisahan baris untuk anak-anak flex */
+    padding-bottom: 0%;
+    /* background-image: linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+    background-size: 50% 40%;  */
+    background-color: white;
+}
+
+.game-cards::-webkit-scrollbar {
+  width: 0;  /* Nilai 0 untuk menyembunyikan scrollbar di Chrome/Safari */
+}
+
+.game-card {
+    border: 3px solid rgb(136, 0, 0);
+    padding: 2%;
+    border-radius: 5%;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.414);
+    background-color: #ffffff;
+    margin: 5% 0%;
+    transition: all 0.6s;
+    z-index: 1;
+}
+
+
+.game-cards :hover {
+  filter: brightness(0.7);
+  transition: all 0.6s;
+}
+
+.game-cards a {
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Memastikan gambar berada di dalam container */
+}
+
+.game-card p {
+  font-size: 1vw;
+  object-fit: contain;
+  text-align: center;
+  justify-content: center;
+}
+
+#overlaygame {
+  display: block;
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  background-color: #0000007a;
+  width: 40%;
+  height: 50%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-break: break-all !important;
+}
+
+#overlaygame:target {
+    opacity: 1;
+
+    height: 50%;
+    position: relative;
+    margin: -10%;
+    margin-top: 5.5%;
+    transition: all 0.6s;
+    border-radius: 5%;
+    z-index: 2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+
+#close h1 {
+    color: #fff;
+    padding: 5% ;
+    padding-bottom: 0%;
+    text-align: left;
+
+}
+
+#close:target {
+  color: #fff;
+  opacity: 0;
+  display: none;
+  z-index: 3;
+}
+
+#deskripsi {
+  color: white;
+  z-index: 2;
+  padding: 1%;
+
+  width: 100%;
+  text-align: justify;
+}
+
+#deskripsi h4 {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  font-size: 1vw ;
+}
+
+
+
+/* OUR TEAMS PAGE */
+
+#ourTeamsPage {
+  text-align: center;
+  padding-bottom: 10%;
+  z-index: 2;
+}
+
+#ourTeamsPage h1 {
+  padding: 3%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-evenly;
+  padding: -5%;
+}
+
+.team-members :hover {
+  filter: brightness(0.7);
+  transition: all 0.6s;
+  
+}
+
+.team-member {
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+}
+.team-member a {
+  text-decoration: none;
+}
+
+.team-member img {
+  width: 50%; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: 50%; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  object-fit: cover; /* Menjaga aspek rasio gambar */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.623);
+  border: 2px solid rgba(0, 0, 0, 0.623);
+}
+
+
+/* Styling tambahan sesuai kebutuhan */
+#ourTeamsPage h1 {
+  color: #333;
+  text-decoration: none;
+}
+
+.team-member p {
+  color: #777;
+  font-size: 1.5vw;
+}
+
+#overlay {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  
+
+}
+
+
+#overlay:target {
+  width: 100%;
+  height: 20%;
+  color: #000000;
+  background-color: transparent;
+  position: absolute;
+  justify-content: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  transition: all 1s;
+  animation: fadeIn 2s;
+  opacity: 1;
+  text-align: center;
+  font-size: 1vw;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#overlay1 {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+
+#overlay1:target {
+  width: 100%;
+  height: 20%;
+  color: #000000;
+  background-color: transparent;
+  position: absolute;
+  justify-content: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  transition: all 1s;
+  animation: fadeIn 2s;
+  opacity: 1;
+  font-size: 1vw;
+}
+
+#overlay2 {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+
+#overlay2:target {
+  width: 100%;
+  height: 20%;
+  color: #000000;
+  background-color: transparent;
+  position: absolute;
+  justify-content: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  transition: all 1s;
+  animation: zoom 2s;
+  opacity: 1;
+  font-size: 1vw;
+}
+
+#overlay3 {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+
+#overlay3:target {
+  width: 100%;
+  height: 20%;
+  color: #000000;
+  background-color: transparent;
+  position: absolute;
+  justify-content: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  transition: all 1s;
+  animation: zoom 2s;
+  opacity: 1;
+  font-size: 1vw;
+}
+
+#overlay4 {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+
+#overlay4:target {
+  width: 100%;
+  height: 20%;
+  color: #000000;
+  background-color: transparent;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  transition: all 1s;
+  animation: zoom 2s;
+  opacity: 1;
+  font-size: 1vw;
+}
+
+/* FEEDBACK PAGE */
+
+#feedbackPage {
+  
+  color: #000000; /* Warna teks putih */
+  text-align: center;
+  padding: 10% 0; /* Padding di atas dan bawah */
+  /* background-image: linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+  background-size: 50% 40%;  */
+background-color: white; /* Warna latar belakang */
+  
+}
+
+.feedback-container {
+  width: 50%;
+  margin: 0 auto; /* Pusatkan kontainer */
+  background-color: #fff; /* Warna latar belakang di dalam kontainer */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.474); /* Efek bayangan untuk memberikan dimensi */
+}
+
+.line {
+  height: 5px;
+  width: 10%;
+  background-color: #fff; /* Warna putih untuk garis */
+  margin: 0 auto 20px; /* Pusatkan dan berikan margin di bawah */
+}
+
+.feedback-form {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+}
+
+h1 {
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgb(136, 0, 0);
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #fff; /* Warna latar belakang tombol */
+  color: #285a49; /* Warna teks tombol */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.8vw;
+}
+
+button:hover {
+  background-color: rgb(136, 0, 0); /* Warna latar belakang tombol saat dihover */
+  color: #fff; /* Warna teks tombol saat dihover */
+  transition: all 0.6s;
+}
+
+
+/* CONTACT MEDIA COMPANY PAGE  */
+
+#mediaPage {
+  text-align: center;
+  padding: 0% 0%;
+}
+
+#mediaPage h1 {
+  font-size: 2vw;
+  padding: 5% 10%;
+  text-align: left;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+
+#tiktok {
+  width: 5%;
+  height: 10%;
+  padding-right: 10%;
+  padding: 1%;
+  background-color: #33333343;
+  border-radius: 10%;
+}
+#shopee {
+  width: 5%;
+  height: 10%;
+  padding-right: 10%;
+  padding: 1%;
+  background-color: #33333343;
+  border-radius: 10%;
+}
+#instagram {
+  width: 5%;
+  height: 10%;
+  padding: 1%;
+  background-color: #33333343;
+  border-radius: 10%;
+}
+#mediaLogo {
+  width: 30%;
+  height: 20%;
+  padding-left: 40%;
+  
+}
+
+ul li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+#tiktok,
+#shopee,
+#instagram,
+#mediaLogo {
+  display: inline-block; /* Mengubah dari blok ke inline-block */
+  margin-right: 1%; /* Menambahkan margin untuk memberikan ruang di antara elemen-elemen */
+}
+
+/* HAKI PAGE */
+
+#hakiPage {
+  text-align: center;
+}
+
+#hakiPage h2 {
+  color: #000000;
+  font-size: 1vw;
+  text-align: center;
+}
