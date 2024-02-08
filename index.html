@@ -12,7 +12,7 @@
     <!-- NAVIGATION BAR -->
 
     <header id="navbar">
-        <div id="mainLogo"><img src="logo.png"></div>
+        <div id="mainLogo"><img src="logo3.png"></div>
         <nav>
             <a href="index.html">About Tutingtas</a>
             <!-- <a href="ourGame.html">Our Games</a> -->
@@ -32,12 +32,23 @@
         </main>
     </section>
 
+
+
     <!-- MAIN PAGE -->
 
     <section id="mainPage">
-        <img src="logo3.png">
-        <p>Pioneer Of The Games Innovation</p>
-        <h4>Selamat datang di Tutingtas Games Creation, perusahaan yang menitikberatkan pada pengembangan permainan inovatif yang tidak hanya menghibur, tetapi juga memberikan manfaat positif untuk pembelajaran dan membangun hubungan sosial. Sebagai pionir dalam inovasi permainan, kami berkomitmen untuk menciptakan pengalaman bermain yang unik dan bermanfaat untuk setiap pemain.</h4>
+        <!-- <img src="logo3.png"> -->
+        <h1>TUTINGTAS <br> GAMES CREATION</h1>
+        
+        <p>PIONEER OF THE GAMES INNOVATION</p>
+        <!-- <h4>Selamat datang di Tutingtas Games Creation, perusahaan yang menitikberatkan pada pengembangan permainan inovatif yang tidak hanya menghibur, tetapi juga memberikan manfaat positif untuk pembelajaran dan membangun hubungan sosial. Sebagai pionir dalam inovasi permainan, kami berkomitmen untuk menciptakan pengalaman bermain yang unik dan bermanfaat untuk setiap pemain.</h4> -->
+    </section>
+
+    <section id="welcome">
+        <main>
+            <h1>Siapa Sih Kami?</h1>
+            <p>Selamat datang di Tutingtas Games Creation, perusahaan yang menitikberatkan pada pengembangan permainan inovatif yang tidak hanya menghibur, tetapi juga memberikan manfaat positif untuk pembelajaran dan membangun hubungan sosial. Sebagai pionir dalam inovasi permainan, kami berkomitmen untuk menciptakan pengalaman bermain yang unik dan bermanfaat untuk setiap pemain.</p>
+        </main>
     </section>
 
     <!-- VISI MISI PAGE -->
@@ -222,7 +233,7 @@
                     <img id="instagram" src="instagram.png" alt="Instagran">
                 </a>
                 <a href="#">
-                    <img id="mediaLogo" src="logo.png" alt="Tutingtas Creation">
+                    <img id="mediaLogo" src="logo3.png" alt="Tutingtas Creation">
                 </a>
             </li>
         </ul>
@@ -237,12 +248,13 @@
 
 
     <script>
-        // Add scroll event listener to change the header background color
+        // Add scroll event listener to change the header and nav background color
         window.addEventListener('scroll', function() {
             var header = document.querySelector('header');
+            var nav = document.querySelector('a');
             var scrolled = window.scrollY > 50; // Change 50 to the desired scroll position
             header.classList.toggle('scrolled', scrolled);
-            nav.classList.toggle('navscrolled', scrolled);
+            a.classList.toggle('navscrolled', scrolled);
         });
     </script>
 
