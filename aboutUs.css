@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 3%;
     background-color: transparent;
     color: white;
     height: 10%;
@@ -38,7 +38,7 @@ body {
     width: 15%;
     height: auto;
     position: fixed;
-    margin-top: -2%;
+    margin-top: 0%;
   }
   
   nav {
@@ -46,7 +46,7 @@ body {
     padding-right: 10%;
     position: fixed;
     margin-left: 70%;
-    margin-top: 0%;
+    margin-top: 4%;
     
   }
   
@@ -85,7 +85,18 @@ body {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.623);
   }
 
-  
+  @media screen and (max-width: 450px) {
+    nav a {
+      display: none;
+    }
+    #mainLogo img {
+      width: 20%;
+      height: auto;
+      position: fixed;
+      margin-top: 0%;
+    }
+    
+  }
 
   /* BACKGROUND */
 
@@ -96,7 +107,8 @@ body {
   main {
     position: relative;
     overflow: hidden;
-    margin-top: 0%;
+    margin: 0%;
+    margin-top: -3%;
   }
   
   video {
@@ -114,7 +126,91 @@ body {
     height: 100%;
     padding-bottom: 0%;
   }
+  @media screen and (max-width: 450px) {
+    main img {
+      filter: brightness(0.5);
+      width: 100%;
+      height: 100%;
+      padding-bottom: 0%;
+    }
+    
+  }
+
+  /* MAIN PAGE */
+
+  #mainPage {
+    padding: 10%;
+    margin-top: -35%;
+    text-align: start;
+    position: absolute;
+    z-index: 9;
+    
+  }
+
+  #mainPage img {
+    width: 40%;
+    height: 20%;
+    
+  }
+
+  #mainPage h1 {
+    color: #ffffff;
+    font-size: 5vw;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+  }
   
+  #mainPage h2 {
+    color: #ffffff;
+    font-size: 300%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  #mainPage h3 {
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    /* letter-spacing: 1vw; */
+    margin-top: 2%;
+    /* box-shadow: 2px 2px 4px rgb(255, 0, 0); */
+    font-size: 2vw;
+    /* background-color: #ffffff; */
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1%;
+  }
+
+  #mainPage h4 {
+    color: #ffffff;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 1.5vw;
+  }
+
+  @media screen and (max-width: 450px) {
+    #mainPage h1 {
+      color: #ffffff;
+      font-size: 300%;
+      margin-bottom: 0%;
+      display: flex;
+      align-items: center;
+    }
+    #mainPage h3 {
+      color: rgb(255, 255, 255);
+      /* letter-spacing: 1vw; */
+      margin-top: 2%;
+      /* box-shadow: 2px 2px 4px rgb(255, 0, 0); */
+      font-size: 4vw;
+      /* background-color: #ffffff; */
+      width: fit-content;
+      height: fit-content;
+      border-radius: 1%;
+    }
+  }
+
   /* WELCOME */
   #welcome {
     background-color: #000000;
@@ -139,59 +235,37 @@ body {
     padding: 5%;
     padding-top: 0%;
   }
-
-  /* MAIN PAGE */
-
-  #mainPage {
-    padding: 10%;
-    margin-top: -35%;
-    text-align: start;
-    position: absolute;
-    z-index: 9;
-    
-  }
-
-  #mainPage img {
-    width: 40%;
-    height: 20%;
-    
-  }
-
-  #mainPage h1 {
-    color: #ffffff;
-    font-size: 500%;
-    margin-bottom: 0%;
-    display: flex;
-    align-items: center;
-  }
-  
-  #mainPage h2 {
-    color: #ffffff;
-    font-size: 300%;
-    margin-bottom: 0%;
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  #mainPage p {
-    color: rgb(255, 255, 255);
-    font-size: 200%;
-    /* letter-spacing: 1vw; */
-    margin-top: 2%;
-    /* box-shadow: 2px 2px 4px rgb(255, 0, 0); */
-    font-size: 2vw;
-    /* background-color: #ffffff; */
-    width: fit-content;
-    height: fit-content;
-    border-radius: 1%;
-  }
-
-  #mainPage h4 {
-    color: #ffffff;
-    text-align: justify;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    font-size: 1.5vw;
+  @media screen and (max-width: 450px) {
+    #welcome {
+      background-color: #000000;
+      width: 100%;
+      margin-top: 30%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    #welcome h1 {
+      color: #fff;
+      font-size: 9vw;
+      padding: 5%;
+      padding-bottom: 0%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    #welcome p {
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgb(0, 0, 0);
+      font-size: 4vw;
+      width: 70%;
+      padding: 5%;
+      padding-top: 0%;
+      text-align: center;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 0% auto;
+    }
   }
 
   /* VISI MISI PAGE */
@@ -203,8 +277,6 @@ body {
     margin-top: 0%;
     display: flex;
     justify-content: space-around;
-    
-    
   }
 
   #visi-misi li {
@@ -245,6 +317,59 @@ body {
 #misi h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
   font-size: 2vw;
+}
+@media screen and (max-width: 450px) {
+  #visi-misi {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #visi {
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0% auto;
+    width: 70%;
+    padding-top: -100%;
+    padding-bottom: 0%;
+  }
+
+  #misi {
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0% auto;
+    padding-top: -10%;
+    width: 70%;
+    overflow-wrap: break-word;
+  }
+  #visi p {
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: justify;
+    font-size: 4vw;
+  }
+
+  #misi p {
+    text-align: justify;
+    font-size: 4vw;
+  }
+
+  #visi h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+    font-size: 9vw;
+  }
+
+  #misi h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+    font-size: 9vw;
+  }
 }
   
   /* OUR GAMES PAGE */
@@ -377,7 +502,78 @@ body {
   word-break: break-all;
   font-size: 1vw ;
 }
-
+@media screen and (max-width: 450px) {
+  #ourGamePage h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
+    margin-top: 0%;
+    font-size: 9vw;
+  }
+  .game-cards {
+    transition: all 0.6s;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -12%;
+    overflow-wrap: break-word; /* Menambahkan scrolling horizontal jika melebihi lebar layar */
+    white-space: nowrap; /* Mencegah pemisahan baris untuk anak-anak flex */
+    padding-bottom: 0%;
+    /* background-image: linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+    background-size: 50% 40%;  */
+    background-color: white;
+  }
+  .game-card {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 2%;
+    border-radius: 5%;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.414);
+    background-color: #ffffff;
+    margin: 10% 0%;
+    transition: all 0.6s;
+    z-index: 1;
+  }
+  .game-card p {
+    font-size: 4vw;
+    object-fit: contain;
+    text-align: center;
+    justify-content: center;
+  }
+  #overlaygame {
+    opacity: 0;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    margin-top: 6%;
+    transition: all 0.6s;
+    border-radius: 5%;
+    z-index: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  #overlaygame:target {
+    opacity: 1;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    margin-top: 6%;
+    transition: all 0.6s;
+    border-radius: 5%;
+    z-index: 2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  #deskripsi h4 {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    font-size: 2.7vw ;
+    
+  }
+}
 
 
 /* OUR TEAMS PAGE */
@@ -439,8 +635,6 @@ body {
   z-index: 0;
   opacity: 0;
   position: absolute;
-  
-
 }
 
 
@@ -558,11 +752,94 @@ body {
   opacity: 1;
   font-size: 1vw;
 }
+@media screen and (max-width: 450px) {
+  #ourTeamsPage h1 {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 9vw;
+  }
+  .team-members {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    flex-direction: column;
+  }
+  .team-member {
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+  }
+  .team-member p {
+    color: #ffffff;
+    font-size: 4vw;
+  }
+  #overlay {
+    display: none;
+    opacity: 0;
+  }
+  
+  
+  #overlay:target {
+    display: none;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #overlay1 {
+    display: none;
+    opacity: 0;
+  }
+  
+  
+  #overlay1:target {
+    display: none;
+    opacity: 0;
+  }
+  
+  #overlay2 {
+    display: none;
+    opacity: 0;
+  }
+  
+  
+  #overlay2:target {
+    display: none;
+    opacity: 0;
+  }
+  
+  #overlay3 {
+    display: none;
+    opacity: 0;
+  }
+  
+  
+  #overlay3:target {
+    display: none;
+    opacity: 0;
+  }
+  
+  #overlay4 {
+    display: none;
+    opacity: 0;
+  }
+  #overlay4:target {
+    display: none;
+    opacity: 0;
+  }
+}
 
 /* FEEDBACK PAGE */
 
 #feedbackPage {
-  
   color: #000000; /* Warna teks putih */
   text-align: center;
   padding: 5% 0; /* Padding di atas dan bawah */
@@ -593,7 +870,7 @@ background-color: white; /* Warna latar belakang */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.414);
 }
 
-h1 {
+.feedback-form h1 {
   font-size: 2vw;
   margin-bottom: 20px;
 }
@@ -632,7 +909,30 @@ button:hover {
   color: #fff; /* Warna teks tombol saat dihover */
   transition: all 0.6s;
 }
-
+@media screen and (max-width: 450px) {
+  .feedback-form h1 {
+    font-size: 9vw;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  button {
+    background-color: #fff; /* Warna latar belakang tombol */
+    color: #285a49; /* Warna teks tombol */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 4vw;
+  }
+  .feedback-container {
+    width: 10% auto;
+    margin: 0 auto; /* Pusatkan kontainer */
+    background-color: #fff; /* Warna latar belakang di dalam kontainer */
+    padding: 0%;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.474); /* Efek bayangan untuk memberikan dimensi */
+  }
+}
 
 /* CONTACT MEDIA COMPANY PAGE  */
 
@@ -710,6 +1010,42 @@ ul li a {
   display: inline-block; /* Mengubah dari blok ke inline-block */
   margin-right: 1%; /* Menambahkan margin untuk memberikan ruang di antara elemen-elemen */
 }
+@media screen and (max-width: 450px) {
+  #mediaPage h1 {
+    font-size: 6vw;
+    padding: 5% 10%;
+    text-align: left;
+    color: #ffffff;
+  }
+  #tiktok {
+    width: 10%;
+    height: 15%;
+    padding-right: 10%;
+    padding: 1%;
+    background-color: #ffffff;
+    border-radius: 10%;
+  }
+  #shopee {
+    width: 10%;
+    height: 15%;
+    padding-right: 10%;
+    padding: 1%;
+    background-color: #ffffff;
+    border-radius: 10%;
+  }
+  #instagram {
+    width: 10%;
+    height: 15%;
+    padding: 1%;
+    background-color: #ffffff;
+    border-radius: 10%;
+  }
+  #mediaLogo {
+    width: 40%;
+    height: 30%;
+    padding-left: 50%;
+  }
+}
 
 /* HAKI PAGE */
 
@@ -721,4 +1057,11 @@ ul li a {
   color: #ffffff;
   font-size: 1vw;
   text-align: center;
+}
+@media screen and (max-width: 450px) {
+  #hakiPage h2 {
+    color: #ffffff;
+    font-size: 3vw;
+    text-align: center;
+  }
 }
